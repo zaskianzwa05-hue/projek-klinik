@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jadwal - sistem informasi klinik zaskia nazwa</title>
+    <link rel="stylesheet" href="dokter.css">
+</head>
+<body>
+     <header class="navbar">
+            <div class="logo">
+                    <img src="jbc.png" width="90" alt="logo">
+
+                </div>
+                    <nav>
+                        <ul>
+                            <li><a href="KlinikZasnaz.html"> Beranda </a></li>
+                            <li><a href="layanan.html"> Layanan </a></li>
+                            <li><a href="dokter.html" class="active"> Jadwal Dokter </a></li>
+                            <li><a href="kontak.html"> Kontak </a></li>
+                        </ul>
+                    </nav>
+    </header>
+  <section class="jadwal-section">
+        <h2>Jadwal Dokter</h2>
+        <p>Pilih untuk melihat jadwal hari ini atau semua jadwal dokter.</p>
+
+        <div class="btn-container">
+            <button id="btnToday">Jadwal Hari Ini</button>
+            <button id="btnAll">Semua Dokter</button>
+        </div>
+
+        <table id="tabelJadwal">
+            <thead>
+                <tr>
+                    <th>Nama Dokter</th>
+                    <th>Spesialis</th>
+                    <th>Hari</th>
+                    <th>Jam</th>
+                </tr>
+            </thead>
+            <tbody id="jadwalBody">
+                <!-- JS isi otomatis -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2025 Juaan Beauty Clinic | Sistem Informasi Klinik.</p>
+    </footer>
+
+    <script src="dokter.js"></script>
+</body>
+</html>
